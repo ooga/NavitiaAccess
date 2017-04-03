@@ -1,0 +1,6 @@
+framework module NavitiaAccess {
+  umbrella header "NavitiaAccess-umbrella.h"
+
+  export *
+  module * { export * }
+}

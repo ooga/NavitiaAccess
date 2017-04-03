@@ -61,7 +61,9 @@ class PublicTransportSectionTableViewCell: JourneySectionTableViewCell {
         self.departureStop.text = section.from?.name
         self.arrivalStop.text = section.to?.name
         self.headsign.text = section.displayInformations?.headsign
-        self.direction.text = String(format: "Direction: %@", arguments: [(section.displayInformations?.direction)!])
+        if ((section.displayInformations?.direction) != nil) {
+            self.direction.text = String(format: "Direction: %@", arguments: [(section.displayInformations?.direction)!])
+        }
     }
     
     func getSectionIcon(_ section: Sections) -> UIImage? {

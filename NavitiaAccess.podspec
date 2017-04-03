@@ -30,13 +30,11 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'NavitiaAccess/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'NavitiaAccess' => ['NavitiaAccess/Assets/*.png']
-  # }
+  s.source_files = 'NavitiaAccess/Controllers/**/*', 'NavitiaAccess/Navitia/**/*', 'NavitiaAccess/ViewCell/**/*', 'NavitiaAccess/Field/**/*'
+
+  s.resource = 'NavitiaAccess/Assets/**/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AlamofireObjectMapper', '~> 4.0'
 end

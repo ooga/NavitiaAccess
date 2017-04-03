@@ -10,7 +10,8 @@ import UIKit
 
 class CrowFlySectionTableViewCell: JourneySectionTableViewCell {
 
-    @IBOutlet weak var destinationLabel: UILabel!
+    @IBOutlet var destinationLabel: UILabel!
+    @IBOutlet var icon: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,6 +27,14 @@ class CrowFlySectionTableViewCell: JourneySectionTableViewCell {
     override func updateWith(_ section: Sections) {
         let label = String(format: "Go to %@", arguments: [(section.to?.name)!])
         destinationLabel.text = label
+        
+        if (section.mode != nil) {
+            if section.mode == "bike" {
+                icon.image = UIImage(named: "bike", in: Bundle(for: JourneySectionTableViewCell.self), compatibleWith: nil)
+            } else if section.mode == "car" {
+                icon.image = UIImage(named: "car", in: Bundle(for: JourneySectionTableViewCell.self), compatibleWith: nil)
+            }
+        }
     }
 
 }
