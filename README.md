@@ -1,6 +1,5 @@
 # NavitiaAccess
 
-[![CI Status](http://img.shields.io/travis/Johan Rouve/NavitiaAccess.svg?style=flat)](https://travis-ci.org/Johan Rouve/NavitiaAccess)
 [![Version](https://img.shields.io/cocoapods/v/NavitiaAccess.svg?style=flat)](http://cocoapods.org/pods/NavitiaAccess)
 [![License](https://img.shields.io/cocoapods/l/NavitiaAccess.svg?style=flat)](http://cocoapods.org/pods/NavitiaAccess)
 [![Platform](https://img.shields.io/cocoapods/p/NavitiaAccess.svg?style=flat)](http://cocoapods.org/pods/NavitiaAccess)
